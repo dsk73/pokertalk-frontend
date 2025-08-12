@@ -1,0 +1,18 @@
+.heading {
+  margin: 2rem 0 1rem;
+  text-align: left;
+}
+
+.heading h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.line {
+  height: 4px;
+  width: 50px;
+  background: #ff6b31;
+  margin-top: 6px;
+  border-radius: 2px;
+}

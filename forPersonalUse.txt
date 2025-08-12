@@ -1,0 +1,5 @@
+1. nav bar to right ---- done
+2. previous grid for top stories ---- working
+3. ad coin poker in poker rooms ---- done
+
+

@@ -1,0 +1,43 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 0rem;
+  width: 100%;
+  padding: 0rem;
+}
+
+.main {
+  width: 100%;
+}
+
+.side {
+  width: 100%;
+}
+
+/* Light Theme */
+.light {
+  --bg-color: #ffffff;
+  --text-color: #1e293b;
+}
+
+/* Dark Theme */
+.dark {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .main {
+    order: 1;
+  }
+
+  .side {
+    order: 2;
+    margin-top: 2rem;
+  }
+}

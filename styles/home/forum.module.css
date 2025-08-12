@@ -1,0 +1,78 @@
+.container {
+  margin: 0rem 0;
+}
+
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #1e293b;
+  border-left: 4px solid #0ea5e9;
+  padding-left: 0.75rem;
+}
+
+.hotTopic,
+.recentTopics {
+  margin-bottom: 2rem;
+}
+
+.topicCard {
+  background-color: var(--card-bg);
+  border-left: 4px solid #f54b4b;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  transition: box-shadow 0.2s;
+}
+
+.topicCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.topicCard .subnewsTitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.topicCard .para {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: 500;
+}
+
+.recentTopics ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.topicItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  background-color: var(--card-bg);
+  margin-bottom: 0.6rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.topicItem:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.topicItem a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.comments {
+  font-size: 0.9rem;
+  color: #999;
+}

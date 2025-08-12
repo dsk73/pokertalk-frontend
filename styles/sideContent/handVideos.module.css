@@ -1,0 +1,28 @@
+.container {
+  margin-bottom: 2rem;
+  padding: 0rem 0rem 1rem 0rem;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: var(--text-primary);
+  border-left: 4px solid #0ea5e9; /* same as latest news */
+  padding-left: 0.75rem; /* same indent */
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.videoBox {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}

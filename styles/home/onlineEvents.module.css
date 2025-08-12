@@ -1,0 +1,54 @@
+.container {
+  margin: 0rem 0;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #1e293b;
+  border-left: 4px solid #0ea5e9;
+  padding-left: 0.75rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.table th {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.registerBtn {
+  padding: 0.4rem 0.75rem;
+  background: #0070f3;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: inline-block;
+}

@@ -1,0 +1,149 @@
+.container {
+  margin-top: 0rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-left: 0.75rem;
+  border-left: 4px solid #0ea5e9;
+  color: var(--text-color);
+}
+
+.noData {
+  padding: 0.5rem;
+  color: #888;
+  font-size: 1rem;
+}
+
+.sliderWrapper {
+  overflow-x: auto;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.slider {
+  display: flex;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 18rem;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--card-bg);
+  box-shadow: 0px 0px 2px;
+  border-color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background-color: #ccc;
+}
+
+.cardInfo {
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.location {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.button {
+  padding: 0.4rem 0.75rem;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0284c7;
+}
+
+/* Light Theme */
+.light {
+  --card-bg: #ffffff;
+  --text-color: #1e293b;
+}
+
+/* Dark Theme */
+.dark {
+  --card-bg: #1e293b;
+  --text-color: #f8fafc;
+}
+
+/* ✅ Responsive (≤768px): Flex row - image left, text right */
+@media (max-width: 768px) {
+  .card {
+    width: 92vw;
+    flex-direction: row;
+    height: auto;
+    
+  }
+
+  .image {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .cardInfo {
+    width: 55%;
+    padding: 0.7rem;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 0.8rem;
+  }
+
+  .location {
+    font-size: 0.7rem;
+  }
+
+  .date {
+    font-size: 0.65rem;
+  }
+
+  .button {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .heading {
+    font-size: 1rem;
+  }
+}

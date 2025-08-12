@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 2%;
+}
+
+.mainContent {
+  flex: 0 0 75%;
+}
+
+.sideContent {
+  flex: 0 0 20%;
+}

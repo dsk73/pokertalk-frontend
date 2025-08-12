@@ -1,0 +1,174 @@
+.container {
+  margin: 0rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-left: 0.75rem;
+  border-left: 4px solid #0ea5e9;
+  color: var(--text-color);
+}
+
+.noData {
+  padding: 1rem;
+  color: #999;
+  font-size: 1rem;
+}
+
+.sliderWrapper {
+  overflow-x: auto;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.slider {
+  display: flex;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.videoCard {
+  flex: 0 0 auto;
+  height: 22rem;
+  aspect-ratio: 9 / 16;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 1px;
+  border-color: var(--text-color);
+  background: var(--card-bg);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: #ddd;
+}
+
+.videoInfo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0.6rem 0.5rem;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.playButton {
+  background-color: white;
+  color: black;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: fit-content;
+}
+
+.username {
+  color: #a4d4ff;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.caption {
+  font-size: 0.8rem;
+  color: #f1f1f1;
+  line-height: 1.2;
+}
+
+/* Light Theme */
+.light {
+  --card-bg: #ffffff;
+  --text-color: #1e293b;
+}
+
+/* Dark Theme */
+.dark {
+  --card-bg: #1e293b;
+  --text-color: #f8fafc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 1.1rem;
+  }
+
+  .videoCard {
+    height: 300px;
+  }
+
+  .playButton {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+
+  .username {
+    font-size: 0.75rem;
+  }
+
+  .caption {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1rem;
+  }
+
+  .videoCard {
+    height: 250px;
+  }
+
+  .playButton {
+    font-size: 0.7rem;
+    padding: 3px 7px;
+  }
+
+  .username {
+    font-size: 0.7rem;
+  }
+
+  .caption {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1rem;
+  }
+
+  .videoCard {
+    height: 220px;
+  }
+
+  .playButton {
+    font-size: 0.6rem;
+    padding: 2px 6px;
+  }
+
+  .username {
+    font-size: 0.65rem;
+  }
+
+  .caption {
+    font-size: 0.6rem;
+  }
+}
