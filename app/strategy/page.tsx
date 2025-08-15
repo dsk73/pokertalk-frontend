@@ -6,6 +6,7 @@ import Link from "next/link";
 import { getStrategies } from "@/lib/api";
 import SubPageLayout from "@/components/common/SubPageLayout";
 import styles from "@/styles/pages/news.module.css"; // reusing same layout
+import backend_url from "@/config";
 
 const StrategyPage = () => {
   const [strategies, setStrategies] = useState<any[]>([]);

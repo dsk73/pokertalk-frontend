@@ -5,6 +5,7 @@ import styles from "@/styles/home/shortSummary.module.css";
 import { getShortSummaries } from "@/lib/api";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import backend_url from "@/config";
 
 const ShortSummary = () => {
   const [summaries, setSummaries] = useState<any[]>([]);

@@ -6,6 +6,7 @@ import styles from "@/styles/home/latestNews.module.css";
 import { getAllNews } from "@/lib/api";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import backend_url from "@/config";
 
 const LatestNews = () => {
   const [newsList, setNewsList] = useState<any[]>([]);

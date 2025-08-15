@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import { getEventById } from "@/lib/api";
 import styles from "@/styles/pages/eventsPage.module.css";
 import { useTheme } from "next-themes";
+import backend_url from "@/config";
 
 const EventDetailsPage = () => {
   const { id } = useParams();

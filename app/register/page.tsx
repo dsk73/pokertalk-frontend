@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import backend_url from "@/config";
 
 export default function RegisterPage() {
   const [email, setEmail] = useState('');

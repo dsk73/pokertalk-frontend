@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import SubPageLayout from "@/components/common/SubPageLayout";
 import styles from "@/styles/pages/gallery.module.css";
 import { useTheme } from "next-themes";
+import backend_url from "@/config";
 
 const strapiBase = process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
 

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getAllNews } from "@/lib/api";
 import SubPageLayout from "@/components/common/SubPageLayout";
 import styles from "@/styles/pages/news.module.css";
+import backend_url from "@/config";
 
 export async function generateStaticParams() {
   try {
@@ -26,7 +27,11 @@ async function getNewsById(id: string) {
   }
 }
 
-const NewsDetailPage = async ({ params }: { params: { id: string } }) => {
+interface NewsPageProps {
+  params: { id: string }
+}
+
+const NewsDetailPage = async ({ params }: { params: any }) => {
   const newsItem = await getNewsById(params.id);
 
   if (!newsItem) return notFound();

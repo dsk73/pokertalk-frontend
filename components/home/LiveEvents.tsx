@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import styles from "@/styles/home/liveEvents.module.css";
 import { getLiveEvents } from "@/lib/api";
 import { useTheme } from "next-themes";
+import backend_url from "@/config";
 
 const LiveEvents = () => {
   const [events, setEvents] = useState<any[]>([]);

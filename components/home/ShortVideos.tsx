@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { getShortVideos } from "@/lib/api";
 import styles from "@/styles/home/shortVideos.module.css";
 import { useTheme } from "next-themes";
+import backend_url from "@/config";
 
 const ShortVideos = () => {
   const [videos, setVideos] = useState<any[]>([]);

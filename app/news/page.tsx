@@ -6,6 +6,7 @@ import Link from "next/link";
 import { getAllNews } from "@/lib/api";
 import SubPageLayout from "@/components/common/SubPageLayout";
 import styles from "@/styles/pages/news.module.css";
+import backend_url from "@/config";
 
 const NewsPage = () => {
   const [newsList, setNewsList] = useState<any[]>([]);

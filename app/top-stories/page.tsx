@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getTopStories } from "@/lib/api";
 import SubPageLayout from "@/components/common/SubPageLayout";
 import styles from "@/styles/pages/news.module.css";
+import backend_url from "@/config";
 
 export async function generateStaticParams() {
   try {

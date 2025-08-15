@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import styles from '@/styles/sideContent/topPokerRooms.module.css';
+import backend_url from "@/config";
 
 const TopPokerRooms = () => {
   const [pokerRooms, setPokerRooms] = useState<any[]>([]);

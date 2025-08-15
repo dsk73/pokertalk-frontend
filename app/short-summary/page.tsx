@@ -3,6 +3,7 @@ import { getShortSummaries } from "@/lib/api";
 import SubPageLayout from "@/components/common/SubPageLayout";
 import styles from "@/styles/pages/summaryPage.module.css";
 import Link from "next/link";
+import backend_url from "@/config";
 
 const ShortSummaryListPage = async () => {
   const summaries = await getShortSummaries();

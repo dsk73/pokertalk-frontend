@@ -6,6 +6,7 @@ import styles from "@/styles/home/strategy.module.css";
 import { getStrategies } from "@/lib/api";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import backend_url from "@/config";
 
 const Strategy = () => {
   const [strategies, setStrategies] = useState<any[]>([]);

@@ -1,5 +1,6 @@
 // components/NewsList.tsx
 import React from "react";
+import backend_url from "@/config";
 
 type NewsItem = {
   id: number;

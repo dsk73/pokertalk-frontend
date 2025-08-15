@@ -5,6 +5,7 @@ import styles from "@/styles/home/topStories.module.css";
 import { getTopStories } from "@/lib/api";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import backend_url from "@/config";
 
 const TopStories = () => {
   const [stories, setStories] = useState<any[]>([]);
@@ -37,7 +38,7 @@ const TopStories = () => {
             >
               {imgUrl ? (
                 <img
-                  src={`http://localhost:1337${imgUrl}`}
+                  src={`${backend_url}${imgUrl}`}
                   alt={attrs.Title}
                   className={`${index === 0 ? styles.imageLarge : styles.imageSmall}`}
                 />

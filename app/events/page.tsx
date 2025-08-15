@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { getLiveEvents } from "@/lib/api";
 import styles from "@/styles/pages/eventsPage.module.css";
+import backend_url from "@/config";
 
 const EventsPage = () => {
   const [liveEvents, setLiveEvents] = useState<any[]>([]);

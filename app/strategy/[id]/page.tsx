@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getStrategies } from "@/lib/api";
 import SubPageLayout from "@/components/common/SubPageLayout";
 import styles from "@/styles/pages/strategyPage.module.css"; // reuse styles
+import backend_url from "@/config";
 
 export async function generateStaticParams() {
   try {

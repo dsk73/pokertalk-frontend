@@ -2,6 +2,7 @@ import React from "react";
 import { getShortSummaryById } from "@/lib/api";
 import SubPageLayout from "@/components/common/SubPageLayout";
 import styles from "@/styles/pages/summaryPage.module.css";
+import backend_url from "@/config";
 
 interface Props {
   params: { id: string };
