@@ -9,7 +9,7 @@ const TopPokerRooms = () => {
   useEffect(() => {
     const fetchPokerRooms = async () => {
       try {
-        const res = await fetch('http://localhost:1337/api/poker-rooms?populate=*');
+        const res = await fetch(`${backend_url}/api/poker-rooms?populate=*`);
         const json = await res.json();
         let rooms = json.data || [];
 
@@ -36,7 +36,7 @@ const TopPokerRooms = () => {
         {pokerRooms.map((room) => {
           const { id, attributes } = room;
           const imageUrl = attributes?.Image?.data?.attributes?.url
-            ? `http://localhost:1337${attributes.Image.data.attributes.url}`
+            ? `${backend_url}${attributes.Image.data.attributes.url}`
             : '/placeholder.jpg';
 
           return (

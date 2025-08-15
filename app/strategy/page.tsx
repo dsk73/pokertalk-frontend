@@ -38,7 +38,7 @@ const StrategyPage = () => {
                 <Link key={id} href={`/strategy/${id}`} className={styles.card}>
                   {coverUrl ? (
                     <img
-                      src={`http://localhost:1337${coverUrl}`}
+                      src={`${backend_url}${coverUrl}`}
                       alt={attributes.Title}
                       className={styles.image}
                     />

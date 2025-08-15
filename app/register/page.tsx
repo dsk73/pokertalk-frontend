@@ -10,7 +10,7 @@ export default function RegisterPage() {
   const router = useRouter();
 
   const handleRegister = async () => {
-    const res = await fetch('http://localhost:1337/api/auth/local/register', {
+    const res = await fetch(`${backend_url}/api/auth/local/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, username, password }),

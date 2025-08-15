@@ -44,7 +44,7 @@ const EventDetailsPage = () => {
 
       {imageUrl && (
         <img
-          src={`http://localhost:1337${imageUrl}`}
+          src={`${backend_url}${imageUrl}`}
           alt={attrs.Title}
           className={styles.image}
         />

@@ -7,7 +7,7 @@ import styles from "@/styles/pages/gallery.module.css";
 import { useTheme } from "next-themes";
 import backend_url from "@/config";
 
-const strapiBase = process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
+const strapiBase = process.env.NEXT_PUBLIC_STRAPI_URL || ${backend_url};
 
 const GalleryPage = () => {
   const [events, setEvents] = useState([]);

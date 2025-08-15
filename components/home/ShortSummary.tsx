@@ -38,7 +38,7 @@ const ShortSummary = () => {
             <Link href={`/short-summary/${item.id}`} key={item.id} className={styles.card}>
               {coverUrl ? (
                 <img
-                  src={`http://localhost:1337${coverUrl}`}
+                  src={`${backend_url}${coverUrl}`}
                   alt={attrs.Title}
                   className={styles.cover}
                 />

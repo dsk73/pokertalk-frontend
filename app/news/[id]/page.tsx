@@ -50,7 +50,7 @@ const NewsDetailPage = async ({ params }: { params: any }) => {
 
           {imageUrl && (
             <img
-              src={`http://localhost:1337${imageUrl}`}
+              src={`${backend_url}${imageUrl}`}
               alt={attributes.Title}
               className={styles.detailImage}
             />

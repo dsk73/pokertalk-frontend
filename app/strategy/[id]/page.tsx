@@ -46,7 +46,7 @@ const StrategyDetailPage = async ({ params }: { params: { id: string } }) => {
 
           {coverUrl && (
             <img
-              src={`http://localhost:1337${coverUrl}`}
+              src={`${backend_url}${coverUrl}`}
               alt={attributes.Title}
               className={styles.detailImage}
             />

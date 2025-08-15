@@ -38,7 +38,7 @@ const NewsPage = () => {
                 <Link key={id} href={`/news/${id}`} className={styles.card}>
                   {imgUrl ? (
                     <img
-                      src={`http://localhost:1337${imgUrl}`}
+                      src={`${backend_url}${imgUrl}`}
                       alt={attributes.Title}
                       className={styles.image}
                     />

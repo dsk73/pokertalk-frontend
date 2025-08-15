@@ -56,7 +56,7 @@ const ShortVideos = () => {
                 >
                   {thumbUrl ? (
                     <img
-                      src={`http://localhost:1337${thumbUrl}`}
+                      src={`${backend_url}${thumbUrl}`}
                       alt="Video Thumbnail"
                       className={styles.thumbnail}
                     />
