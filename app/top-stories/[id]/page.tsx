@@ -35,7 +35,7 @@ const TopStoryDetailPage = async ({ params }: { params: { id: string } }) => {
 
           {imageUrl && (
             <img
-              src={`${backend_url}${imageUrl}`}
+              src={`${backend_url}/api${imageUrl}`}
               alt={attributes.Title}
               className={styles.detailImage}
             />

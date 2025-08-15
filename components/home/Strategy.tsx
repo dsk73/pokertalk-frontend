@@ -43,7 +43,7 @@ const Strategy = () => {
               <div className={styles.imageWrapper}>
                 {coverUrl ? (
                   <img
-                    src={`${backend_url}${coverUrl}`}
+                    src={`${backend_url}/api${coverUrl}`}
                     alt={attrs.Title}
                     className={styles.cover}
                   />

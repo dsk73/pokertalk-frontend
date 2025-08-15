@@ -36,7 +36,7 @@ const TopPokerRooms = () => {
         {pokerRooms.map((room) => {
           const { id, attributes } = room;
           const imageUrl = attributes?.Image?.data?.attributes?.url
-            ? `${backend_url}${attributes.Image.data.attributes.url}`
+            ? `${backend_url}/api${attributes.Image.data.attributes.url}`
             : '/placeholder.jpg';
 
           return (

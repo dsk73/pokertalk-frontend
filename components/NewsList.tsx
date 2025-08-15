@@ -33,7 +33,7 @@ export default function NewsList({ news }: { news: NewsItem[] }) {
           >
             {imageUrl && (
               <img
-                src={`${backend_url}${imageUrl}`}
+                src={`${backend_url}/api${imageUrl}`}
                 alt={Title}
                 className="w-full h-48 object-cover rounded mb-3"
               />

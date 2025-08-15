@@ -39,7 +39,7 @@ const LatestNews = () => {
               <div className={styles.imageWrapper}>
                 {imgUrl ? (
                   <img
-                    src={`${backend_url}${imgUrl}`}
+                    src={`${backend_url}/api${imgUrl}`}
                     alt={attrs.Title}
                     className={styles.image}
                   />

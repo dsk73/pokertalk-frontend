@@ -26,7 +26,7 @@ const ShortSummaryDetailPage = async ({ params }: Props) => {
         <p className={styles.detailDate}>{attrs.Date_Published}</p>
         {coverUrl && (
           <img
-            src={`${backend_url}${coverUrl}`}
+            src={`${backend_url}/api${coverUrl}`}
             alt={attrs.Title}
             className={styles.detailImage}
           />

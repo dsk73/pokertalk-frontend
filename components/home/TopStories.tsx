@@ -38,7 +38,7 @@ const TopStories = () => {
             >
               {imgUrl ? (
                 <img
-                  src={`${backend_url}${imgUrl}`}
+                  src={`${backend_url}/api${imgUrl}`}
                   alt={attrs.Title}
                   className={`${index === 0 ? styles.imageLarge : styles.imageSmall}`}
                 />

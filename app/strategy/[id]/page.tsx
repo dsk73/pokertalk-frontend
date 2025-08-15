@@ -46,7 +46,7 @@ const StrategyDetailPage = async ({ params }: { params: { id: string } }) => {
 
           {coverUrl && (
             <img
-              src={`${backend_url}${coverUrl}`}
+              src={`${backend_url}/api${coverUrl}`}
               alt={attributes.Title}
               className={styles.detailImage}
             />

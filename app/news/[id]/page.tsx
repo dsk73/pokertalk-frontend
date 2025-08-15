@@ -50,7 +50,7 @@ const NewsDetailPage = async ({ params }: { params: any }) => {
 
           {imageUrl && (
             <img
-              src={`${backend_url}${imageUrl}`}
+              src={`${backend_url}/api${imageUrl}`}
               alt={attributes.Title}
               className={styles.detailImage}
             />

@@ -42,7 +42,7 @@ const EventsPage = () => {
                 <div className={styles.card}>
                   {imageUrl && (
                     <img
-                      src={`${backend_url}${imageUrl}`}
+                      src={`${backend_url}/api${imageUrl}`}
                       alt={attrs.Title}
                       className={styles.image}
                     />
